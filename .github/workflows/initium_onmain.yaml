@@ -6,6 +6,10 @@ on:
     branches:
       - main
 
+permissions:
+  contents: read
+  packages: write
+
 jobs:
   cli:
     runs-on: ubuntu-latest
@@ -13,7 +17,7 @@ jobs:
       - uses: actions/checkout@v3
 
       - name: build and deploy on main
-        uses: docker://ghcr.io/nearform/initium-cli:latest
+        uses: docker://ghcr.io/nearform/initium-cli:initium-feat-issue-134
         with:
           args: onmain
         env:
