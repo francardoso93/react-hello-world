@@ -1,0 +1,7 @@
+app-name: react-hello-world
+cluster-endpoint: null
+container-registry: ghcr.io/francardoso93
+default-branch: main
+dockerfile-name: null
+registry-user: null
+runtime-version: null
